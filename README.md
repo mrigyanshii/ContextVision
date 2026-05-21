@@ -65,6 +65,16 @@ ContextVision/
    - selected mode (Productivity / Fun)
 
 ---
+🌍 Deployment
+Deployed using Vercel
+Frontend hosted as static site
+Model loaded directly from /models
+
+📌 Future Improvements
+Mobile AR optimization
+More object categories
+Advanced gesture-based interaction
+Backend API for model versioning
 
 ## 🧪 Running Locally
 
@@ -72,17 +82,3 @@ ContextVision/
 cd client
 npm install
 npm run dev
-
-
-##🌍 Deployment
-
-Deployed using Vercel
-
-Frontend hosted as static site
-Model loaded directly from /models
-
-##📌 Future Improvements
-Mobile AR optimization
-More object categories
-Advanced gesture-based interaction
-Backend API for model versioning
