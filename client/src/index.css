@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #38bdf8;
+  --color-brand-secondary: #94a3b8;
+  --color-brand-accent: #0ea5e9;
+  --color-surface-bg: #1a1a1c;
+  --color-surface-card: #27272a;
+  --color-border: #3f3f46;
+  --color-text-primary: #f8fafc;
+  --font-sans: 'Outfit', 'Inter', 'Roboto', sans-serif;
+  --font-display: 'Playwrite GB S', cursive;
+
+  @keyframes scan {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(1000%); }
+  }
+}
+
+@layer utilities {
+  .pro-card {
+    @apply bg-surface-card border border-border shadow-sm rounded-xl;
+  }
+
+  /* Dashboard pages: allow scroll */
+  .dashboard-scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+body {
+  background-color: var(--color-surface-bg);
+  color: var(--color-text-primary);
+  margin: 0;
+  /* overflow controlled per-page via class */
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
